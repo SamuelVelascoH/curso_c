@@ -4,21 +4,29 @@
 
 using namespace std;
 int main () {
-  //While example
-  int c = 0;
-  //forma clasica
-  while(c < 10){
-      cout<<c<<" Ya por favoo..."<<endl;
-      c= c+1;
-  }
-  //forma fea pero a veces necesaria
-  while(true){
-    cout<<c<<" Ya por favoo..."<<endl;
-    c= c+1;
-    if(c > 10){
-        break;
+    int v,t,n=0;
+    cin>>t;
+    cin>>v;
+
+    while (n<v){
+        n=n+1;
+        cout<<t<<"x"<<(n)<<"="<<(n*t)<<endl;
     }
-  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
@@ -33,7 +41,7 @@ int main () {
 
 */
 
-}
+
 
 
 /**
