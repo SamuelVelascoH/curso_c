@@ -5,6 +5,18 @@
 using namespace std;
 int main () {
   //code something...
+  //Pasos para subir un ejercicio:
+  // 1. Crear nueva rama basada en *main
+  //    a. git checkout main                --> cambiarse a la rama *main
+  //    b. git checkout -b name_new_branch  --> crear nueva rama basada en rama *main
+
+
+  // 2. Rifartela con tu ejercicio
+
+
+  // 3. git add .                           --> agregar todos los cambios para guardar
+  // 4. git commit -m "descripcion"         --> hacer un commit de los cambios con un mensaje descriptivo.
+  // 5. git push -u origin name_new_branch  --> subir a tu repo remoto, con alias origin
 }
 
 
