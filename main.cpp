@@ -4,7 +4,35 @@
 
 using namespace std;
 int main () {
-  //code something...
+  //While example
+  int c = 0;
+  //forma clasica
+  while(c < 10){
+      cout<<c<<" Ya por favoo..."<<endl;
+      c= c+1;
+  }
+  //forma fea pero a veces necesaria
+  while(true){
+    cout<<c<<" Ya por favoo..."<<endl;
+    c= c+1;
+    if(c > 10){
+        break;
+    }
+  }
+
+
+/**
+    partes del bucle while
+
+    palabra_reservada   condicion   bloque
+    while               (c < 10)    {}
+
+    forma basica de parar in ciclo;
+    int c = 0;
+    incrementar c hasta que alcance romper la condicion c>10 == false
+
+*/
+
 }
 
 
