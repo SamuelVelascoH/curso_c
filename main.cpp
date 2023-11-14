@@ -4,16 +4,26 @@
 
 using namespace std;
 int main () {
-    int a;
     int n;
     cin>>n;
-    string x="*";
 
-    while (a<n){
-        a++;
-        cout<<x<<endl;
-        x=x+"*";
+
+
+    int x = 0;
+    while (x < n) {
+        x++;
+
+        int y = 0;
+        while (y < n) {
+            cout <<"*";
+            y++;
+        }
+
+        cout << endl;
     }
+
+
+
 
 
 }
