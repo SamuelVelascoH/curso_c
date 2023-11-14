@@ -4,13 +4,15 @@
 
 using namespace std;
 int main () {
-    int v,t,n=0;
-    cin>>t;
-    cin>>v;
+    int a;
+    int n;
+    cin>>n;
+    string x="*";
 
-    while (n<v){
-        n=n+1;
-        cout<<t<<"x"<<(n)<<"="<<(n*t)<<endl;
+    while (a<n){
+        a++;
+        cout<<x<<endl;
+        x=x+"*";
     }
 
 
