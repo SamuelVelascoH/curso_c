@@ -1,32 +1,39 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+#include <math.h>
 
 using namespace std;
 int main () {
     int n;
+    int pos=1;
+
     cin>>n;
+    string es = "";
+    int size = n*n;
+
+    while (pos<=size){
 
 
-
-    int x = 0;
-    while (x < n) {
-        x++;
-
-        int y = 0;
-        while (y < n) {
-            cout <<"*";
-            y++;
+        if(pos % n != 0 & (pos-1) % n != 0 & pos > n & pos < (size-n)){
+            es += " ";
+        }else{
+            es += "*";
         }
+        if(pos%n == 0){
+            es+="\n";
+        }
+        pos++;
 
-        cout << endl;
     }
-
-
-
-
+    cout<<es;
 
 }
+
+
+
+
+
 
 
 
