@@ -6,16 +6,12 @@
 using namespace std;
 int main () {
 
-    int  a, r=0, n1=1, n2,n=8;
-
-    for (a=1; a<n; a++) {
-        cout<<r;
-       n2=r+n1;
-       r=n1;
-       n1=n2;
-
+    int n,m,f=1;
+        cin>>n;
+    for (m=2; m<=5; m++) {
+        f=f*m;
     }
-
+    cout<<"el factor de "<<n<<"es: "<<f;
     }
 
 
