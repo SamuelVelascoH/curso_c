@@ -5,13 +5,35 @@
 
 using namespace std;
 int main () {
-
-    int n,m,f=1;
-        cin>>n;
-    for (m=2; m<=5; m++) {
-        f=f*m;
+    string usuario,contraseña;
+    int c,n=3;
+    cout<<"INGRESE USUARIO: ";
+    cin>>usuario;
+    cout<<"INGRESE CONTRASEÑA: ";
+    cin>>contraseña;
+    if (usuario=="samuel" & contraseña=="velasco"){
+        cout<<"WELCOME!";
     }
-    cout<<"el factor de "<<n<<"es: "<<f;
+    while (usuario!="samuel" & contraseña!="velasco" & c<n){
+        cout<<"ERROR! ...";
+            cout<<"INGRESE USUARIO: ";
+            cin>>usuario;
+            cout<<"INGRESE CONTRASEÑA: ";
+            cin>>contraseña;
+            c++;
+        if (c==n){
+            cout<<"TRES INTENTOS, CUENTA BLOQUEADA ";
+        }
+        if (usuario=="samuel" & contraseña=="velasco"){
+            cout<<"WELCOME!";
+        }
+
+
+        }
+
+
+
+
     }
 
 
