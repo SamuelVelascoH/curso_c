@@ -5,16 +5,16 @@
 
 using namespace std;
 int main () {
-int n=5,j,i;
 
-for(i=1; i<=n; i++){
-    for(j=1; j<=n-i; j++)
-        cout<<" ";
-    for(j=1; j<= 2*i-1; j++)
-        cout<<"*";
-    cout<<endl;
-}
+    int n;
+    string t;
+    cin>>n;
+    while (n!=0){
+        t=t+ to_string(n)+" ";
+        cin>>n;
 
+    }
+    cout<<t;
 
 }
 
