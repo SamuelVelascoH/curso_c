@@ -6,17 +6,20 @@
 using namespace std;
 int main () {
 
-    int n;
-    string t;
-    cin>>n;
-    while (n!=0){
-        t=t+ to_string(n)+" ";
-        cin>>n;
+    int  a, r=0, n1=1, n2,n=8;
+
+    for (a=1; a<n; a++) {
+        cout<<r;
+       n2=r+n1;
+       r=n1;
+       n1=n2;
 
     }
-    cout<<t;
 
-}
+    }
+
+
+
 
 
 
