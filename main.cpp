@@ -5,15 +5,18 @@
 
 using namespace std;
 int main () {
-    int a, n=3, c;
-    for(c=1; c<=n; c++){
-        a=1;
-        cout<<a;
-        a=0;
-        cout<<a;
-        c++;
-
+    int n;
+    cout<<"Ingresa un numero: ";
+    cin>>n;
+    for (int i=1; i<=n; ++i) {
+        if (i%2==0){
+            cout<<"0";
+        }
+        else cout<<"1";
     }
+
+
+
 }
 
 
