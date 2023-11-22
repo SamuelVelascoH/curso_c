@@ -6,12 +6,12 @@
 using namespace std;
 int main () {
     int n,m;
-    cout<<"ELIGE LA PELICILA CON EL NUMERO QUE CORRESPONDA: "<<endl;
-    cout<<"1.  El gato con botas............100 pesos"<<endl;
-    cout<<"2.  Pinocho......................130 pesos"<<endl;
-    cout<<"3.  El chavo del ocho............500 pesos"<<endl;
-    cout<<"4.  Rata tule....................100 pesos"<<endl;
-    cout<<"5.  No contabas con mi astucia...800 pesos"<<endl;
+    cout<<"ELIGE EL PLATILLO CON EL NUMERO QUE CORRESPONDA: "<<endl;
+    cout<<"1.  Huevos.......................100 pesos"<<endl;
+    cout<<"2.  Huevos revueltos.............130 pesos"<<endl;
+    cout<<"3.  Huevos batidos...............500 pesos"<<endl;
+    cout<<"4.  Huevos tibios................100 pesos"<<endl;
+    cout<<"5.  Huevos muertos...............800 pesos"<<endl;
     cin>>n;
     cout<<"Ingrese el monto a pagar";
     cin>>m;
