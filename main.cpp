@@ -5,17 +5,23 @@
 
 using namespace std;
 int main () {
-    string usuario,contraseña;
-    int c,n=5,n1=1, n2=0;
-    for (c=1;c<=n;c++) {
-        cout<<n1;
+    int a, n=3, c;
+    for(c=1; c<=n; c++){
+        a=1;
+        cout<<a;
+        a=0;
+        cout<<a;
+        c++;
 
     }
+}
 
 
 
 
-    }
+
+
+
 
 
 
