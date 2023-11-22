@@ -5,15 +5,18 @@
 
 using namespace std;
 int main () {
-    int a, n=3, c;
-    for(c=1; c<=n; c++){
-        a=1;
-        cout<<a;
-        a=0;
-        cout<<a;
-        c++;
+    int n;
+    string i;
+    cin>>n;
+    i=i+to_string(n)+", ";
+    cin>>n;
+    i=i+to_string(n)+", ";
+    cin>>n;
+    i=i+to_string(n)+", ";
+    cin>>n;
+    i=i+to_string(n);
 
-    }
+    cout<<i;
 }
 
 
