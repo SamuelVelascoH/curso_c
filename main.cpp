@@ -6,30 +6,11 @@
 using namespace std;
 int main () {
     string usuario,contraseña;
-    int c,n=3;
-    cout<<"INGRESE USUARIO: ";
-    cin>>usuario;
-    cout<<"INGRESE CONTRASEÑA: ";
-    cin>>contraseña;
-    if (usuario=="samuel" & contraseña=="velasco"){
-        cout<<"WELCOME!";
+    int c,n=5,n1=1, n2=0;
+    for (c=1;c<=n;c++) {
+        cout<<n1;
+
     }
-    while (usuario!="samuel" & contraseña!="velasco" & c<n){
-        cout<<"ERROR! ...";
-            cout<<"INGRESE USUARIO: ";
-            cin>>usuario;
-            cout<<"INGRESE CONTRASEÑA: ";
-            cin>>contraseña;
-            c++;
-        if (c==n){
-            cout<<"TRES INTENTOS, CUENTA BLOQUEADA ";
-        }
-        if (usuario=="samuel" & contraseña=="velasco"){
-            cout<<"WELCOME!";
-        }
-
-
-        }
 
 
 
