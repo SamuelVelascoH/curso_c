@@ -5,29 +5,17 @@
 
 using namespace std;
 int main () {
-    int n;
-    cout<<"Ingresa el monto: ";
+    int n,m;
+    cout<<"ELIGE LA PELICILA CON EL NUMERO QUE CORRESPONDA: "<<endl;
+    cout<<"1.  El gato con botas............100 pesos"<<endl;
+    cout<<"2.  Pinocho......................130 pesos"<<endl;
+    cout<<"3.  El chavo del ocho............500 pesos"<<endl;
+    cout<<"4.  Rata tule....................100 pesos"<<endl;
+    cout<<"5.  No contabas con mi astucia...800 pesos"<<endl;
     cin>>n;
-    int billetes500=500,billetes200=200,billetes100=100,billetes50=50;
-    if (n%50!=0){
-        cout<<"solo multiplos de 50, ingrese (y) para intentar de nuevo o (n) para salir. ";
-        string y="y";
-        string n2="n";
+    cout<<"Ingrese el monto a pagar";
+    cin>>m;
 
-        if (cin>>y){
-            cout<<"Ingresa el monto: ";
-            cin>>n;
-        }
-        if (cin>>n2;n2=="n"){cout<<"adios";}
-    }
-    else
-        billetes50=n/50;
-         cout<<"billetes de cincuenta pesos: "<<billetes50<<endl;
-        billetes100=n/100;
-        cout<<"billetes de cien pesos: "<<billetes100<<endl;
-        billetes200=n/200;
-        cout<<"billetes de doscientos pesos: "<<billetes200<<endl;
-        cout<<"billetes de quinientos pesos: "<<billetes500<<endl;
 
 
 }
