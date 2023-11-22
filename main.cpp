@@ -6,17 +6,15 @@
 using namespace std;
 int main () {
     int n;
-    string i;
+    cout<<"ingresa un numero";
     cin>>n;
-    i=i+to_string(n)+", ";
-    cin>>n;
-    i=i+to_string(n)+", ";
-    cin>>n;
-    i=i+to_string(n)+", ";
-    cin>>n;
-    i=i+to_string(n);
+    for (int i=1; i<=n; ++i) {
+           if(i%2==0){
+               cout<<"00";
+           }
+           else cout<<"1";
+    }
 
-    cout<<i;
 }
 
 
