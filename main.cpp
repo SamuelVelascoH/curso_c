@@ -5,7 +5,7 @@
 
 using namespace std;
 int main () {
-    int n,m;
+    int n,m,c;
     cout<<"ELIGE LA PELICILA CON EL NUMERO QUE CORRESPONDA: "<<endl;
     cout<<"1.  El gato con botas............100 pesos"<<endl;
     cout<<"2.  Pinocho......................130 pesos"<<endl;
@@ -13,8 +13,154 @@ int main () {
     cout<<"4.  Rata tule....................100 pesos"<<endl;
     cout<<"5.  No contabas con mi astucia...800 pesos"<<endl;
     cin>>n;
-    cout<<"Ingrese el monto a pagar";
-    cin>>m;
+    cout<<"Ingrese el monto a pagar. ";
+    if (n==1){
+        cout<<" El costo es de 100 pesos";
+        cin>>m;
+        if (m==100){
+            cout<<"pelicula: El gato con botas....100 pesos"<<endl<<
+                  "pagaste:......................."<<m<<"pesos";
+
+            }
+            else if (m>100){
+            c=m-100;
+            cout<<"pelicula: El gato con botas....100 pesos"<<endl<<
+                "pagaste:......................."<<m<<"pesos"<<endl<<
+                "tu cambio es:.................."<<c<<"pesos";
+            }
+            else if (m<100){
+                cout<<"Ingresaste una cantidad menor al costo, intenta de nuevo."<<endl;
+                cin>>m;if (m==100){
+                cout<<"pelicula: El gato con botas....100 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos";
+
+            }
+            else if (m>100){
+                c=m-100;
+                cout<<"pelicula: El gato con botas....100 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos"<<endl<<
+                    "tu cambio es:.................."<<c<<"pesos";
+            }
+            }
+    }
+    if (n==2){
+        cout<<" El costo es de 130 pesos";
+        cin>>m;
+        if (m==130){
+            cout<<"pelicula: Pinocho...............130 pesos"<<endl<<
+                "pagaste:......................."<<m<<"pesos";
+
+        }
+        else if (m>130){
+            c=m-130;
+            cout<<"pelicula: Pinocho...............130 pesos"<<endl<<
+                "pagaste:......................."<<m<<"pesos"<<endl<<
+                "tu cambio es:.................."<<c<<"pesos";
+        }
+        else if (m<130){
+            cout<<"Ingresaste una cantidad menor al costo, intenta de nuevo."<<endl;
+            cin>>m;if (m==130){
+                cout<<"pelicula: Pinocho...............130 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos";
+
+            }
+            else if (m>130){
+                c=m-130;
+                cout<<"pelicula: Pinocho...............130 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos"<<endl<<
+                    "tu cambio es:.................."<<c<<"pesos";
+            }
+        }
+    }
+    if (n==3){
+        cout<<" El costo es de 500 pesos";
+        cin>>m;
+        if (m==500){
+            cout<<"pelicula: El Chavo del ocho.....500 pesos"<<endl<<
+                "pagaste:......................."<<m<<"pesos";
+
+        }
+        else if (m>500){
+            c=m-500;
+            cout<<"pelicula: El Chavo del ocho.....500 pesos"<<endl<<
+                "pagaste:......................."<<m<<"pesos"<<endl<<
+                "tu cambio es:.................."<<c<<"pesos";
+        }
+        else if (m<500){
+            cout<<"Ingresaste una cantidad menor al costo, intenta de nuevo."<<endl;
+            cin>>m;if (m==500){
+                cout<<"pelicula: El Chavo del ocho.....500 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos";
+
+            }
+            else if (m>500){
+                c=m-500;
+                cout<<"pelicula: El Chavo del ocho.....500 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos"<<endl<<
+                    "tu cambio es:.................."<<c<<"pesos";
+            }
+        }
+    }
+    if (n==4){
+        cout<<" El costo es de 100 pesos";
+        cin>>m;
+        if (m==100){
+            cout<<"pelicula: Rata tule.............100 pesos"<<endl<<
+                "pagaste:......................."<<m<<"pesos";
+
+        }
+        else if (m>100){
+            c=m-100;
+            cout<<"pelicula: Rata tule.............100 pesos"<<endl<<
+                "pagaste:......................."<<m<<"pesos"<<endl<<
+                "tu cambio es:.................."<<c<<"pesos";
+        }
+        else if (m<100){
+            cout<<"Ingresaste una cantidad menor al costo, intenta de nuevo."<<endl;
+            cin>>m;if (m==100){
+                cout<<"pelicula: Rata tule.............100 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos";
+
+            }
+            else if (m>100){
+                c=m-100;
+                cout<<"pelicula: Rata tule.............100 pesos"<<endl<<
+                    "pagaste:......................."<<m<<"pesos"<<endl<<
+                    "tu cambio es:.................."<<c<<"pesos";
+            }
+        }
+    }
+    if (n==5){
+        cout<<" El costo es de 800 pesos";
+        cin>>m;
+        if (m==800){
+            cout<<"pelicula: No contabas con mi astucia....800 pesos"<<endl<<
+                "pagaste:..............................."<<m<<"pesos";
+
+        }
+        else if (m>800){
+            c=m-800;
+            cout<<"pelicula: No contabas con mi astucia....800 pesos"<<endl<<
+                "pagaste:..............................."<<m<<"pesos"<<endl<<
+                "tu cambio es:.........................."<<c<<"pesos";
+        }
+        else if (m<800){
+            cout<<"Ingresaste una cantidad menor al costo, intenta de nuevo."<<endl;
+            cin>>m;if (m==800){
+                cout<<"pelicula: No contabas con mi astucia....800 pesos"<<endl<<
+                    "pagaste:..............................."<<m<<"pesos";
+
+            }
+            else if (m>800){
+                c=m-800;
+                cout<<"pelicula: No contabas con mi astucia....800 pesos"<<endl<<
+                    "pagaste:..............................."<<m<<"pesos"<<endl<<
+                    "tu cambio es:.........................."<<c<<"pesos";
+            }
+        }
+    }
+
+
 
 
 
