@@ -5,7 +5,7 @@
 
 using namespace std;
 int main () {
-    int n,m;
+    int n,m,c,i;
     cout<<"ELIGE EL PLATILLO CON EL NUMERO QUE CORRESPONDA: "<<endl;
     cout<<"1.  Huevos.......................100 pesos"<<endl;
     cout<<"2.  Huevos revueltos.............130 pesos"<<endl;
@@ -13,9 +13,37 @@ int main () {
     cout<<"4.  Huevos tibios................100 pesos"<<endl;
     cout<<"5.  Huevos muertos...............800 pesos"<<endl;
     cin>>n;
-    cout<<"Ingrese el monto a pagar";
-    cin>>m;
-
+    if (n==1){
+        i=100+100*.16;
+        cout<<"el costo es de "<<i<<" pesos, ingrese el monto..."<<endl;
+        cin>>m;
+        if (m==i){
+            cout<<"Huevos: costo con iva: "<<i<<" pesos"<<endl<<
+                  "pagaste................"<<m<<" pesos"<<endl<<
+                  "tu cambio es de......... 0 pesos";
+        }
+        else if (m>i){
+            c=m-i;
+            cout<<"Huevos: costo con iva: "<<i<<" pesos"<<endl<<
+                "pagaste................"<<m<<" pesos"<<endl<<
+                "tu cambio es de......... "<<c<<" pesos";
+        }
+        else if (m<i){
+            cout<<"la cantidad es menor al costo, intente de nuevo...";
+            cin>>m;
+            if (m==i){
+                cout<<"Huevos: costo con iva: "<<i<<" pesos"<<endl<<
+                    "pagaste................"<<m<<" pesos"<<endl<<
+                    "tu cambio es de......... 0 pesos";
+            }
+            else if (m>i){
+                c=m-i;
+                cout<<"Huevos: costo con iva: "<<i<<" pesos"<<endl<<
+                    "pagaste................"<<m<<" pesos"<<endl<<
+                    "tu cambio es de......... "<<c<<" pesos";
+            }
+        }
+    }
 
 
 }
