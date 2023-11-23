@@ -5,17 +5,14 @@
 
 using namespace std;
 int main () {
-    int n,m;
-    cout<<"ELIGE EL PLATILLO CON EL NUMERO QUE CORRESPONDA: "<<endl;
-    cout<<"1.  Huevos.......................100 pesos"<<endl;
-    cout<<"2.  Huevos revueltos.............130 pesos"<<endl;
-    cout<<"3.  Huevos batidos...............500 pesos"<<endl;
-    cout<<"4.  Huevos tibios................100 pesos"<<endl;
-    cout<<"5.  Huevos muertos...............800 pesos"<<endl;
-    cin>>n;
-    cout<<"Ingrese el monto a pagar";
-    cin>>m;
-
+    int n=60;
+    for (int i=1; i=n; ++i) {
+        if ((n%2)==0){
+            cout<<"0";
+        }
+        else cout<<"1";
+        n=n/2;
+    }
 
 
 }
