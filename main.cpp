@@ -7,12 +7,13 @@ using namespace std;
 int main () {
 
     int n,m,f=1;
-        cin>>n;
-    for (m=2; m<=5; m++) {
+    cin>>n;
+    for (m=2; m<=n; m++) {
         f=f*m;
+        cout<<f<<endl;
     }
-    cout<<"el factor de "<<n<<"es: "<<f;
-    }
+    cout<<"el factor de "<<n<<" es: "<<f;
+}
 
 
 
