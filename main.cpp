@@ -5,14 +5,17 @@
 
 using namespace std;
 int main () {
-    int n;
-    cout<<"ingresa un numero";
-    cin>>n;
-    for (int i=1; i<=n; ++i) {
-           if(i%2==0){
-               cout<<"00";
-           }
-           else cout<<"1";
+    int n=8;
+    //cout<<"ingresa un numero";
+    //cin>>n;
+    for (int i=1,x=2; i<=n; ++i, x++) {
+       if(x%2!=0){
+           cout<<"0";
+       }
+       else cout<<"1";
+        if(x>2){
+            x=0;
+        }
     }
 
 }
