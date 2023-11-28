@@ -7,25 +7,29 @@ using namespace std;
 int main () {
     int n, total=0;
     int tam[n];
+    cout<<"Ingrese el numeros de el arreglo: "<<endl;
     cin>>n;
-
+    cout<<"Ingrese el contenido: "<<endl;
     for (int i = 0; i < n; ++i) {
-       cin>>tam[i];// 1 2 3 4 5
+       cin>>tam[i];
 
     }
+    cout<<"Su contenido invertido y separado en dos secciones es: "<<endl;
+    cout<<"[ ";
     for (int i = n-1; i>=0; --i){
+        if ( i==(n/2)-1){
+            cout<<"]  [ ";
+        }
             cout<<tam[i]<<" ";
 
         }
     for (int i = 0; i < n  ; ++i) {
         total=total+tam[i];
     }
-cout<<endl<<total;
+cout<<"]"<<endl<<"La suma de todo el contenido es: "<<endl<<total;
 
 
     }
-
-
 
 
 
