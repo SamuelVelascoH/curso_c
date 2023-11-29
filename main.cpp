@@ -5,28 +5,38 @@
 
 using namespace std;
 int main () {
-    int n, total=0;
-    int tam[n];
-    cout<<"Ingrese el numeros de el arreglo: "<<endl;
-    cin>>n;
-    cout<<"Ingrese el contenido: "<<endl;
-    for (int i = 0; i < n; ++i) {
-       cin>>tam[i];
-
-    }
-    cout<<"Su contenido invertido y separado en dos secciones es: "<<endl;
-    cout<<"[ ";
-    for (int i = n-1; i>=0; --i){
-        if ( i==(n/2)-1){
-            cout<<"]  [ ";
-        }
-            cout<<tam[i]<<" ";
+    int filas, columnas;
+    cout << "ingrese el numero de lilas:" << endl;
+    cin >> filas;
+    cout << "ingrese el numero de columnas " << endl;
+    cin >> columnas;
+    int matriz[filas][columnas];
+    cout << "ingrese todo el contenido: " << endl;
+    for (int i = 0; i < filas; ++i) {
+        for (int j = 0; j < columnas; ++j) {
+            cin >> matriz[i][j];
 
         }
-    for (int i = 0; i < n  ; ++i) {
-        total=total+tam[i];
     }
-cout<<"]"<<endl<<"La suma de todo el contenido es: "<<endl<<total;
+    for (int i = 0; i < filas; ++i) {
+        for (int j = 0; j <columnas ; ++j) {
+            cout<<matriz[i][j];
+        }cout<<endl;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
