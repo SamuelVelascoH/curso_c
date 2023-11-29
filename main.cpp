@@ -5,26 +5,31 @@
 
 using namespace std;
 int main () {
-    int filas, columnas;
-    cout << "ingrese el numero de lilas:" << endl;
-    cin >> filas;
-    cout << "ingrese el numero de columnas " << endl;
-    cin >> columnas;
-    int matriz[filas][columnas];
-    cout << "ingrese todo el contenido: " << endl;
-    for (int i = 0; i < filas; ++i) {
-        for (int j = 0; j < columnas; ++j) {
-            cin >> matriz[i][j];
-
+    int n,p;
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    cin>>p;
+    if (p==1) {
+        for (int i = 0; i < n; ++i) {
+            if (a[i] % 2 != 0) {
+                cout << a[i] << " ";
+            }
         }
     }
-    for (int i = 0; i < filas; ++i) {
-        for (int j = 0; j <columnas ; ++j) {
-            cout<<matriz[i][j];
-        }cout<<endl;
+    else if (p==0) {
+        cout<<endl;
+        for (int i = 0; i < n; ++i) {
+            if (a[i] % 2 == 0) {
+                cout << a[i] << " ";
+            }
+        }
     }
 
 
+}
 
 
 
@@ -39,7 +44,9 @@ int main () {
 
 
 
-    }
+
+
+
 
 
 
