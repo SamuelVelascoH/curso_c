@@ -5,31 +5,36 @@
 
 using namespace std;
 int main () {
-    int n,p;
+    int n,i=0,j=0, uno,cero;
     cin >> n;
-    int a[n];
-    for (int i = 0; i < n; ++i) {
-        cin >> a[i];
-    }
-    cin>>p;
-    if (p==1) {
+    int a[n], b[n];
+
+
         for (int i = 0; i < n; ++i) {
-            if (a[i] % 2 != 0) {
-                cout << a[i] << " ";
-            }
+            cin >> a[i];
         }
-    }
-    else if (p==0) {
-        cout<<endl;
-        for (int i = 0; i < n; ++i) {
-            if (a[i] % 2 == 0) {
-                cout << a[i] << " ";
-            }
+        cout << endl;
+        for (int j = 0; j < n; ++j) {
+            cin >> b[j];
         }
+
+            if (a[i]>b[j]){
+              cout<<"1";
+
+            }
+            else if (a[i]<=b[j]){
+                cout<<"0";
+            }
+
+
+
+
+
     }
 
 
-}
+
+
 
 
 
