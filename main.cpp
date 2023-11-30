@@ -5,32 +5,22 @@
 
 using namespace std;
 int main () {
-    int n,i=0,j=0, uno,cero;
-    cin >> n;
-    int a[n], b[n];
-
-
-        for (int i = 0; i < n; ++i) {
-            cin >> a[i];
-        }
-        cout << endl;
-        for (int j = 0; j < n; ++j) {
-            cin >> b[j];
-        }
-
-            if (a[i]>b[j]){
-              cout<<"1";
-
-            }
-            else if (a[i]<=b[j]){
-                cout<<"0";
-            }
-
-
-
-
-
+    int n,k;
+    cin>>n;
+    int a[n];
+    for (int i = 0; i < n; ++i) {
+        cin>>a[i];
     }
+    cin>>k;
+    for (int i = 0; i < n; ++i) {
+        if ((a[i]%k)==0){
+            cout<<a[i]<<" ";
+        }else cout<<"x ";
+    }
+
+
+
+}
 
 
 
