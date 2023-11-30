@@ -1,30 +1,29 @@
 #include <iostream>
-#include <windows.h>
-#include <conio.h>
-#include <math.h>
-
 using namespace std;
-int main () {
-    int n,k;
-    cin>>n;
+
+int main() {
+    std::cin.tie(nullptr);
+    std::ios_base::sync_with_stdio(false);
+
+    int n,repetido;
+    cin >> n;
     int a[n];
     for (int i = 0; i < n; ++i) {
         cin>>a[i];
     }
-    cin>>k;
     for (int i = 0; i < n; ++i) {
-        if ((a[i]%k)==0){
-            cout<<a[i]<<" ";
-        }else cout<<"x ";
+        if (a[i]==a[i+1] | a[i]==n | a[i]==a[i]){
+            repetido=a[i];
+            if (repetido==repetido){
+
+            }
+        }
     }
 
+    cout<<repetido;
 
-
+    return 0;
 }
-
-
-
-
 
 
 
